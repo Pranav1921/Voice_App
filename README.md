@@ -111,45 +111,114 @@ VoiceTaskApp/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start: Installation & How to Run
 
-### Prerequisites
-- Node.js (v18.x or higher)
-- npm or yarn
-- Physical Android / iOS device with the **Expo Go** app installed (or Android Studio Emulator)
+Follow these simple steps to run the complete Voice Assistant stack on your local machine and physical device.
 
 ---
 
-### Installation & Setup
+### 1️⃣ Prerequisites
+- **Node.js**: `v18.0.0` or higher installed on your computer ([Download Node.js](https://nodejs.org/)).
+- **Mobile Device**: An Android (or iOS) smartphone with the **Expo Go** app installed from Google Play Store or Apple App Store.
+- **Wi-Fi Connection**: Make sure your computer and mobile phone are connected to the **same Wi-Fi network**.
 
-1. **Clone the repository and install dependencies:**
+---
+
+### 2️⃣ Installation
+
+1. **Clone the Repository:**
    ```bash
-   cd VoiceTaskApp
+   git clone https://github.com/Pranav1921/Voice_App.git
+   cd Voice_App
+   ```
+
+2. **Install Dependencies:**
+   ```bash
    npm install
    ```
 
-2. **Configure API Keys:**
-   Create or edit the `.env` file in the root directory (or configure keys in `server/server.js`):
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root folder (or copy from `.env.example`):
+   ```bash
+   cp .env.example .env
+   ```
+   Add your API keys to `.env`:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
    GEMINI_API_KEY=your_gemini_api_key_here
+   OPENROUTER_API_KEY=your_openrouter_api_key_here
    PORT=5000
    ```
+   > 💡 *Get free API keys from [Groq Console](https://console.groq.com/) and [Google AI Studio](https://aistudio.google.com/).*
 
-3. **Start the Cognitive Backend Server:**
-   ```bash
-   npm run server
+---
+
+### 3️⃣ Running the Application
+
+You will run **two terminal windows**:
+
+#### Terminal 1: Start the AI Cognitive Backend Server
+```bash
+npm run server
+```
+*You will see:*
+```
+╔══════════════════════════════════════════════════════════════════╗
+║ 🚀 VOICE ASSISTANT BACKEND SERVER RUNNING                       ║
+║ 🌐 Port: 5000                                                    ║
+║ 📡 API Endpoint: http://localhost:5000/api/process-voice        ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+#### Terminal 2: Start the Expo Development Server
+```bash
+npx expo start --clear
+```
+
+---
+
+### 4️⃣ Open & Run on Your Mobile Phone
+
+1. Open the **Expo Go** app on your phone.
+2. Tap **"Scan QR Code"** and scan the QR code displayed in **Terminal 2**.
+3. The JavaScript bundle will load and the app will start immediately on your device!
+4. Tap the **🎙️ microphone button** or the **3D Holographic Orb** and start speaking!
+
+---
+
+## 🛠️ Connecting Phone to Local Backend (Wi-Fi Setup)
+
+When running locally, ensure your mobile device can reach your PC's backend server:
+
+1. Find your computer's local Wi-Fi IP address:
+   - **Windows**: Run `ipconfig` in Command Prompt (look for `IPv4 Address`, e.g., `192.168.31.51`).
+   - **Mac / Linux**: Run `ifconfig` or `ip a` (e.g., `192.168.1.100`).
+2. Open [`src/services/BackendApiService.js`](src/services/BackendApiService.js) and verify the IP matches:
+   ```javascript
+   const BACKEND_BASE_URL = 'http://YOUR_LOCAL_IP:5000';
    ```
-   *The server starts on port `5000` with the Groq Whisper + Llama 3.3 70B pipeline active.*
 
-4. **Start the Expo Development Server:**
-   ```bash
-   npx expo start --clear
-   ```
+---
 
-5. **Run on Mobile Device:**
-   - Open **Expo Go** on your physical phone (connected to the same Wi-Fi network).
-   - Scan the QR code displayed in your terminal or Metro bundler window.
+## ☁️ Cloud Deployment Guide
+
+### Deploying the Backend (Free on Render):
+1. Sign up on [Render.com](https://render.com) and click **New Web Service**.
+2. Connect your GitHub repository `Pranav1921/Voice_App`.
+3. Set **Start Command**: `node server/server.js`.
+4. Add environment variables `GROQ_API_KEY`, `GEMINI_API_KEY`, and `PORT=5000`.
+5. Update `src/services/BackendApiService.js` with your live Render URL (`https://your-app.onrender.com`).
+
+### Building a Standalone Android APK (EAS Build):
+```bash
+# 1. Install EAS CLI and login
+npm install -g eas-cli
+npx eas login
+
+# 2. Build direct installable Android APK
+npx eas build -p android --profile preview
+```
+*Expo will generate a direct download link and QR code to install the APK directly on any Android phone!*
 
 ---
 
@@ -165,3 +234,4 @@ The app gracefully requests permissions on first use:
 
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
+
