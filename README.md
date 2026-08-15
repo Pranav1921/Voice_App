@@ -1,0 +1,167 @@
+# 🎙️ Voice Assistant & Task Automation App
+
+An ultra-fast, intelligent, multimodal AI Voice Assistant mobile application built with **React Native (Expo SDK 54)** and powered by a hybrid cognitive engine combining **Groq Whisper Large v3 Turbo**, **Groq Llama 3.3 70B Versatile**, and **Google Gemini Multimodal Audio**.
+
+Designed with a pixel-perfect, minimalist glassmorphic interface featuring a **3D Iridescent Holographic Liquid Orb**, real-time dynamic date & clock context, **direct Google Calendar cloud sync**, and deep Android OS hardware/system controls.
+
+---
+
+## 🌟 Key Features
+
+### ⚡ 1. Ultra-Low Latency Voice Engine (< 250ms)
+- **Groq Whisper Large v3 Turbo**: High-speed speech-to-text with support for phonetic correction and natural accents (~150ms).
+- **Groq Llama 3.3 70B Versatile**: Intelligent cognitive intent classification and entity extraction (~30ms).
+- **Gemini Multimodal Audio**: High-fidelity multimodal audio processing fallback.
+- **Dynamic Real-Time Clock**: Injects live system date, day of the week, time, and timezone context dynamically on every request so the assistant always knows the exact date today, tomorrow, or upcoming weekdays.
+
+### 📅 2. Direct Google Calendar Cloud Auto-Sync
+- **Silent Native Event Creation**: Integrated with `expo-calendar` to query your primary `@gmail.com` / `com.google` account and directly insert events into Google Calendar without interrupting user flow.
+- **In-App Agenda & Push Notifications**: Simultaneously persists tasks in local storage and schedules local push notification alarms with sound and vibration.
+- **One-Tap `[ 📅 Sync ]` Button**: Allows syncing any saved task from the Agenda view straight to Google Calendar.
+
+### 📱 3. Deep Mobile OS Hardware & Settings Control
+Directly control phone hardware and access native Android settings via voice commands:
+- 🔦 **Flashlight / Torch**: Hardware LED activation via `expo-camera`.
+- 📸 **Camera Viewfinder**: Instant camera launch via `expo-image-picker`.
+- 📶 **Wi-Fi Settings**: Jump to system Wi-Fi management.
+- 📊 **Mobile Data Settings**: Jump to cellular data & roaming configurations.
+- 🔵 **Bluetooth Settings**: Open Bluetooth device pairing screen.
+- 📸 **Screenshot Capture**: Native screenshot capture intents.
+- 📍 **Location / GPS**: Quick toggle to GPS location services.
+- 🔋 **Battery Saver**: Access power management settings.
+- ☀️ **Display & Brightness**: Screen timeout and display preferences.
+- 🔊 **Sound & Volume**: Audio profile & volume sliders.
+- 📡 **Hotspot & Storage**: Tethering and device storage views.
+
+### 💬 4. WhatsApp, Calls, SMS & Address Book Lookup
+- **WhatsApp Deep-Linking (`wa.me`)**: Generates universal click-to-chat links (`https://wa.me/91XXXXXXXXXX?text=...`) and native WhatsApp URI schemes to open directly in the recipient's chat window with pre-filled message text.
+- **Contact Book Resolution**: Automatic contact name search using `expo-contacts` to fetch phone numbers on the fly (e.g., *"Send WhatsApp to Rahul saying I am on my way"*).
+- **Generic WhatsApp Contact Picker**: Opens WhatsApp with pre-filled text when no specific contact is mentioned.
+- **Direct Phone Calls & SMS**: Opens native dialer and SMS client pre-populated with numbers and messages.
+
+### ⏰ 5. Intelligent Alarms Engine
+- **OEM Clock App Pre-Fill**: Universal Android intent dispatch (`android.intent.action.SET_ALARM`) with target hour and minute parameters for Google Clock, Samsung Clock, Xiaomi MIUI Clock, and OnePlus Clock.
+- **Local Alarm Notifications**: Exact timed push alarm notifications with ringtones and vibrations via `expo-notifications`.
+
+### 🚀 6. Universal 40+ App Launcher & In-App Search
+- **YouTube In-App Search**: Directly searches videos inside the official YouTube mobile app (`vnd.youtube://results?search_query=...`).
+- **Social Media**: Launch Instagram, Facebook, X (Twitter), LinkedIn, Snapchat, and Reddit.
+- **Travel & Food**: Deep-link to MakeMyTrip, Goibibo, Uber, Ola, Zomato, and Swiggy.
+- **Productivity**: Google Keep, Samsung Notes, Calculator, and Google Maps Navigation.
+
+### 🎨 7. 1:1 Pixel-Perfect Glassmorphic UI
+- **3D Iridescent Liquid Glass Orb (`MinimalOrb`)**: Multi-layered rotating wave gradient, gentle breathing aura, and glossy specular glass reflections.
+- **Two Seamless Screen Modes**:
+  - **Voice View**: Minimalist interface with the 3D Orb, `✨ Your Assistant` status badge, centered headline display, and 3-button floating bottom bar (`💬` Chat View | `🎙️` Circular Mic Button | `✕` Reset).
+  - **Chat View**: Centered hero greeting, horizontal `Popular Idea` cards slider (`UX`, `Fi`, `⏰`, `💬`), and floating input pill bar (`+` | `Write here ...` | `✈`).
+
+---
+
+## 🗣️ Voice Commands & Cheat Sheet
+
+| Category | Voice Commands to Speak |
+| :--- | :--- |
+| **Device Hardware** | *"Turn on flashlight"* • *"Flash off"* • *"Open camera"* • *"Take photo"* |
+| **System Settings** | *"Turn off Wi-Fi"* • *"Mobile data"* • *"Bluetooth settings"* • *"Turn on GPS"* • *"Take screenshot"* • *"Battery saver"* • *"Display settings"* • *"Sound settings"* |
+| **WhatsApp** | *"Send WhatsApp to Rahul saying I will reach in 10 minutes"* • *"Send WhatsApp message hi"* |
+| **Calls & SMS** | *"Call Rahul"* • *"Call 9876543210"* • *"Send SMS to Mom saying call me back"* |
+| **Reminders & Calendar** | *"Remind me to submit project tomorrow at 4 PM"* • *"Remind me to pay bills on Friday"* |
+| **Alarms** | *"Set an alarm for 7:30 AM"* • *"Set alarm for 6:00 AM tomorrow"* |
+| **Agenda Management** | *"Read my tasks"* • *"What are my reminders for today?"* • *"Clear all tasks"* |
+| **App Launchers** | *"Search YouTube for lofi music"* • *"Open Instagram"* • *"Open MakeMyTrip"* • *"Navigate to Airport"* |
+| **Real-Time Clock & AI** | *"What is the date today?"* • *"What day is it today?"* • *"What time is it?"* • *"Explain quantum computing in simple terms"* |
+
+---
+
+## 🏗️ Architecture & Technology Stack
+
+```
+VoiceTaskApp/
+├── App.js                         # Main application entry & UI state router
+├── server/
+│   ├── server.js                  # Express backend cognitive pipeline (Groq + Gemini)
+│   └── database.json              # Local JSON database for persistent records
+├── src/
+│   ├── components/
+│   │   ├── MinimalOrb.js          # 3D Iridescent Liquid Glass Orb component
+│   │   └── EqualizerBars.js       # Dynamic soundwave audio equalizer
+│   └── services/
+│       ├── DeviceControlService.js# OS settings, hardware torch, camera, WhatsApp, alarms & Google Calendar sync
+│       ├── AssistantService.js    # Local offline rule-based intent parsing fallback
+│       ├── AudioService.js        # Multi-engine audio recording (expo-audio / Groq / Gemini)
+│       ├── ContactService.js      # Address book lookup via expo-contacts
+│       ├── NotificationService.js # Local push alarms & scheduled notifications via expo-notifications
+│       ├── StorageService.js      # AsyncStorage persistent local storage
+│       └── TtsService.js          # Text-to-speech audio readout via expo-speech
+└── package.json
+```
+
+### Core Technologies:
+- **Mobile Framework**: React Native 0.76+, Expo SDK 54 / 57
+- **AI Backend Engine**: Node.js, Express, Groq SDK (`llama-3.3-70b-versatile`, `whisper-large-v3-turbo`), Google Generative AI (`gemini-2.0-flash-exp`)
+- **Native Modules**:
+  - `expo-calendar` (Google Calendar direct sync)
+  - `expo-camera` (Hardware LED flashlight control)
+  - `expo-image-picker` (Camera viewfinder)
+  - `expo-contacts` (Device address book resolution)
+  - `expo-notifications` (Local timed push notifications & alarms)
+  - `expo-speech` (Local offline text-to-speech engine)
+  - `expo-audio` / `expo-av` (Native audio recording)
+  - `@react-native-async-storage/async-storage` (Persistent state)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18.x or higher)
+- npm or yarn
+- Physical Android / iOS device with the **Expo Go** app installed (or Android Studio Emulator)
+
+---
+
+### Installation & Setup
+
+1. **Clone the repository and install dependencies:**
+   ```bash
+   cd VoiceTaskApp
+   npm install
+   ```
+
+2. **Configure API Keys:**
+   Create or edit the `.env` file in the root directory (or configure keys in `server/server.js`):
+   ```env
+   GROQ_API_KEY=your_groq_api_key_here
+   GEMINI_API_KEY=your_gemini_api_key_here
+   PORT=5000
+   ```
+
+3. **Start the Cognitive Backend Server:**
+   ```bash
+   npm run server
+   ```
+   *The server starts on port `5000` with the Groq Whisper + Llama 3.3 70B pipeline active.*
+
+4. **Start the Expo Development Server:**
+   ```bash
+   npx expo start --clear
+   ```
+
+5. **Run on Mobile Device:**
+   - Open **Expo Go** on your physical phone (connected to the same Wi-Fi network).
+   - Scan the QR code displayed in your terminal or Metro bundler window.
+
+---
+
+## 🔒 Permissions Handled
+The app gracefully requests permissions on first use:
+- **Microphone**: Audio recording for voice commands.
+- **Calendar**: Direct auto-save to Google Calendar.
+- **Camera**: Hardware flashlight torch and viewfinder.
+- **Contacts**: Contact lookup for direct WhatsApp messaging and phone calls.
+- **Notifications**: Exact local alarm notifications.
+
+---
+
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).

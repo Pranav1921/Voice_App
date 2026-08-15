@@ -1,0 +1,408 @@
+{
+  "tasks": [
+    {
+      "id": "1786819158534_bzfg1",
+      "task": "submit project",
+      "date": "2026-08-16",
+      "time": "4:00 PM",
+      "completed": false,
+      "createdAt": "2026-08-15T18:39:18.534Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "1786821397615",
+      "query": "Thank you.",
+      "responseText": "You're welcome.",
+      "spokenResponse": "You're welcome.",
+      "type": "CONVERSATION",
+      "timestamp": "12:46 am"
+    },
+    {
+      "id": "1786819172873",
+      "query": "What time is it?",
+      "responseText": "The current time is 12:09 AM.",
+      "spokenResponse": "The current time is 12:09 AM.",
+      "type": "CONVERSATION",
+      "timestamp": "12:09 am"
+    },
+    {
+      "id": "1786819158535",
+      "query": "Remind me to submit project tomorrow at 4 pm.",
+      "responseText": "Reminder set to submit project tomorrow at 4:00 PM.",
+      "spokenResponse": "Reminder set to submit project tomorrow at 4:00 PM.",
+      "type": "TASK",
+      "timestamp": "12:09 am"
+    },
+    {
+      "id": "1786819146929",
+      "query": "Set an alarm for 7.30am.",
+      "responseText": "Setting alarm for 7:30am",
+      "spokenResponse": "Setting alarm for 7:30am",
+      "type": "OS_ACTION",
+      "timestamp": "12:09 am"
+    },
+    {
+      "id": "1786819135425",
+      "query": "Clear all tasks.",
+      "responseText": "All tasks have been cleared.",
+      "spokenResponse": "All tasks have been cleared.",
+      "type": "CLEAR_TASKS",
+      "timestamp": "12:08 am"
+    },
+    {
+      "id": "1786819118483",
+      "query": "Turn off flashlight.",
+      "responseText": "Turning off flashlight",
+      "spokenResponse": "Turning off flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "12:08 am"
+    },
+    {
+      "id": "1786819108052",
+      "query": "Turn on flashlight.",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "12:08 am"
+    },
+    {
+      "id": "1786819068932",
+      "query": "take screenshot",
+      "responseText": "Taking screenshot",
+      "spokenResponse": "Taking screenshot",
+      "type": "OS_ACTION",
+      "timestamp": "12:07 am"
+    },
+    {
+      "id": "1786819055742",
+      "query": "Take screenshots.",
+      "responseText": "Taking screenshot",
+      "spokenResponse": "Taking screenshot",
+      "type": "OS_ACTION",
+      "timestamp": "12:07 am"
+    },
+    {
+      "id": "1786818995143",
+      "query": "Send SMS to Shruta saying call me back.",
+      "responseText": "Sending SMS to Shruta, message: call me back",
+      "spokenResponse": "Sending SMS to Shruta, message: call me back",
+      "type": "OS_ACTION",
+      "timestamp": "12:06 am"
+    },
+    {
+      "id": "1786818973722",
+      "query": "Send WhatsApp message. I...",
+      "responseText": "Opening WhatsApp",
+      "spokenResponse": "Opening WhatsApp",
+      "type": "OS_ACTION",
+      "timestamp": "12:06 am"
+    },
+    {
+      "id": "1786818964479",
+      "query": "message hi",
+      "responseText": "Hello, how can I assist you?",
+      "spokenResponse": "Hello, how can I assist you?",
+      "type": "CONVERSATION",
+      "timestamp": "12:06 am"
+    },
+    {
+      "id": "1786818425605",
+      "query": "Open WhatsApp and message Shruta Hai.",
+      "responseText": "Opening WhatsApp to message Shruta Hai",
+      "spokenResponse": "Opening WhatsApp to message Shruta Hai",
+      "type": "OS_ACTION",
+      "timestamp": "11:57 pm"
+    },
+    {
+      "id": "1786818412960",
+      "query": "Tekst súta hæi nuotsa.",
+      "responseText": "I didn't quite catch that. Could you please repeat?",
+      "spokenResponse": "I didn't quite catch that. Could you please repeat?",
+      "type": "CONVERSATION",
+      "timestamp": "11:56 pm"
+    },
+    {
+      "id": "1786818373838",
+      "query": "Set an alarm for 12 a.m.",
+      "responseText": "Setting alarm for 12:00 AM",
+      "spokenResponse": "Setting alarm for 12:00 AM",
+      "type": "OS_ACTION",
+      "timestamp": "11:56 pm"
+    },
+    {
+      "id": "1786818175391",
+      "query": "Remind me to call John tomorrow by 5 p.m.",
+      "responseText": "Reminder set to call John tomorrow by 5:00 PM",
+      "spokenResponse": "Reminder set to call John tomorrow by 5:00 PM",
+      "type": "TASK",
+      "timestamp": "11:52 pm"
+    },
+    {
+      "id": "1786818127745",
+      "query": "remind me to submit report tomorrow by 5 p.m.",
+      "responseText": "Reminder set to submit report tomorrow by 5:00 PM.",
+      "spokenResponse": "Reminder set to submit report tomorrow by 5:00 PM.",
+      "type": "TASK",
+      "timestamp": "11:52 pm"
+    },
+    {
+      "id": "1786818115264",
+      "query": "What was yesterday?",
+      "responseText": "Yesterday was Friday, August 14, 2026.",
+      "spokenResponse": "Yesterday was Friday, August 14, 2026.",
+      "type": "CONVERSATION",
+      "timestamp": "11:51 pm"
+    },
+    {
+      "id": "1786818099602",
+      "query": "What's special about August 15?",
+      "responseText": "August 15 is significant in many countries, often marking national days or independence days, such as India's Independence Day.",
+      "spokenResponse": "August 15 is significant in many countries, often marking national days or independence days, such as India's Independence Day.",
+      "type": "CONVERSATION",
+      "timestamp": "11:51 pm"
+    },
+    {
+      "id": "1786818089042",
+      "query": "What is special off-roading?",
+      "responseText": "Special off-roading typically refers to driving a vehicle on unpaved surfaces, such as dirt, sand, rocks, or other natural terrain, often requiring specialized vehicles and techniques.",
+      "spokenResponse": "Special off-roading typically refers to driving a vehicle on unpaved surfaces, such as dirt, sand, rocks, or other natural terrain, often requiring specialized vehicles and techniques.",
+      "type": "CONVERSATION",
+      "timestamp": "11:51 pm"
+    },
+    {
+      "id": "1786818079496",
+      "query": "What is the date today?",
+      "responseText": "Today is Saturday, August 15, 2026.",
+      "spokenResponse": "Today is Saturday, August 15, 2026.",
+      "type": "CONVERSATION",
+      "timestamp": "11:51 pm"
+    },
+    {
+      "id": "1786818056585",
+      "query": "set an alarm for 12 a.m. today",
+      "responseText": "Setting alarm for 12:00 AM",
+      "spokenResponse": "Setting alarm for 12:00 AM",
+      "type": "OS_ACTION",
+      "timestamp": "11:50 pm"
+    },
+    {
+      "id": "1786817581516",
+      "query": "What is the date today?",
+      "responseText": "Today's date is not specified as the system does not have real-time access to the current date.",
+      "spokenResponse": "I'm not sure what the date is today.",
+      "type": "CONVERSATION",
+      "timestamp": "11:43 pm"
+    },
+    {
+      "id": "1786817510639",
+      "query": "setting alarm for 12 a.m.",
+      "responseText": "Alarm set for 12:00 AM",
+      "spokenResponse": "Alarm set for 12:00 AM",
+      "type": "TASK",
+      "timestamp": "11:41 pm"
+    },
+    {
+      "id": "1786817453863",
+      "query": "Remind me to submit report tomorrow at 5 pm.",
+      "responseText": "Reminder set to submit report tomorrow at 5 pm",
+      "spokenResponse": "Reminder set to submit report tomorrow at 5 pm",
+      "type": "TASK",
+      "timestamp": "11:40 pm"
+    },
+    {
+      "id": "1786816757468",
+      "query": "Submit Project Monday at 4 pm.",
+      "responseText": "Reminder set to submit project on Monday at 4 pm",
+      "spokenResponse": "Reminder set to submit project on Monday at 4 pm",
+      "type": "TASK",
+      "timestamp": "11:29 pm"
+    },
+    {
+      "id": "1786816716451",
+      "query": "Remind me to submit project at tomorrow 4 pm.",
+      "responseText": "Reminder set to submit project tomorrow at 4 pm",
+      "spokenResponse": "Reminder set to submit project tomorrow at 4 pm",
+      "type": "TASK",
+      "timestamp": "11:28 pm"
+    },
+    {
+      "id": "1786816449034",
+      "query": "Thank you.",
+      "responseText": "You're welcome",
+      "spokenResponse": "You're welcome",
+      "type": "CONVERSATION",
+      "timestamp": "11:24 pm"
+    },
+    {
+      "id": "1786816289644",
+      "query": "Remind me to call Pranav tomorrow by 5 pm.",
+      "responseText": "Reminder set to call Pranav tomorrow by 5 pm",
+      "spokenResponse": "Reminder set to call Pranav tomorrow by 5 pm",
+      "type": "TASK",
+      "timestamp": "11:21 pm"
+    },
+    {
+      "id": "1786816257717",
+      "query": "Turn off Wi-Fi.",
+      "type": "OS_ACTION",
+      "timestamp": "11:20 pm"
+    },
+    {
+      "id": "1786816246382",
+      "query": "Turn off mobile data.",
+      "type": "OS_ACTION",
+      "timestamp": "11:20 pm"
+    },
+    {
+      "id": "1786816011959",
+      "query": "Turn off mobile data.",
+      "responseText": "Turning off mobile data",
+      "spokenResponse": "Turning off mobile data",
+      "type": "OS_ACTION",
+      "timestamp": "11:16 pm"
+    },
+    {
+      "id": "1786816003147",
+      "query": "Turn on internet",
+      "responseText": "Turning on internet",
+      "spokenResponse": "Turning on internet",
+      "type": "OS_ACTION",
+      "timestamp": "11:16 pm"
+    },
+    {
+      "id": "1786815979322",
+      "query": "Turn on bedtime mode.",
+      "responseText": "Turning on bedtime mode",
+      "spokenResponse": "Turning on bedtime mode",
+      "type": "OS_ACTION",
+      "timestamp": "11:16 pm"
+    },
+    {
+      "id": "1786815963587",
+      "query": "turn on bed mode",
+      "responseText": "Turning on bed mode",
+      "spokenResponse": "Turning on bed mode",
+      "type": "OS_ACTION",
+      "timestamp": "11:16 pm"
+    },
+    {
+      "id": "1786815954373",
+      "query": "Turn on or off flashlight.",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "11:15 pm"
+    },
+    {
+      "id": "1786815946231",
+      "query": "Turn on flashlight",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "11:15 pm"
+    },
+    {
+      "id": "1786815664038",
+      "query": "Turn on flashlight.",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "11:11 pm"
+    },
+    {
+      "id": "1786815136560",
+      "query": "Give me list of apps present in my mobile.",
+      "responseText": "Here is the list of apps present in your mobile: Camera, WhatsApp, Instagram, YouTube, Notes, Settings, etc.",
+      "spokenResponse": "Here is the list of apps present in your mobile.",
+      "type": "CONVERSATION",
+      "timestamp": "11:02 pm"
+    },
+    {
+      "id": "1786815117438",
+      "query": "Open Zomato.",
+      "responseText": "Opening Zomato",
+      "spokenResponse": "Opening Zomato",
+      "type": "OS_ACTION",
+      "timestamp": "11:01 pm"
+    },
+    {
+      "id": "1786815070537",
+      "query": "Turn on flashlight.",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "11:01 pm"
+    },
+    {
+      "id": "1786815016595",
+      "query": "open WhatsApp and say hi",
+      "responseText": "WhatsApp opened",
+      "spokenResponse": "Opening WhatsApp and sending a message",
+      "type": "OS_ACTION",
+      "timestamp": "11:00 pm"
+    },
+    {
+      "id": "1786815005841",
+      "query": "Open WhatsApp.",
+      "responseText": "Opening WhatsApp",
+      "spokenResponse": "Opening WhatsApp",
+      "type": "OS_ACTION",
+      "timestamp": "11:00 pm"
+    },
+    {
+      "id": "1786814989379",
+      "query": "Open camera.",
+      "responseText": "Opening camera",
+      "spokenResponse": "Opening camera",
+      "type": "OS_ACTION",
+      "timestamp": "10:59 pm"
+    },
+    {
+      "id": "1786814480704",
+      "query": "Open camera app.",
+      "responseText": "Opening camera",
+      "spokenResponse": "Opening camera",
+      "type": "OS_ACTION",
+      "timestamp": "10:51 pm"
+    },
+    {
+      "id": "1786814409402",
+      "query": "Open WhatsApp.",
+      "type": "OS_ACTION",
+      "timestamp": "10:50 pm"
+    },
+    {
+      "id": "1786814394748",
+      "query": "turn on flashlight",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "10:49 pm"
+    },
+    {
+      "id": "1786814367670",
+      "query": "turn on flashlight",
+      "responseText": "Turning on flashlight",
+      "spokenResponse": "Turning on flashlight",
+      "type": "OS_ACTION",
+      "timestamp": "10:49 pm"
+    },
+    {
+      "id": "1786813992333",
+      "query": "Open camera.",
+      "responseText": "Camera opened",
+      "spokenResponse": "Opening camera",
+      "type": "OS_ACTION",
+      "timestamp": "10:43 pm"
+    },
+    {
+      "id": "1786813965609",
+      "query": "open Gemini",
+      "responseText": "Gemini",
+      "spokenResponse": "Opening Gemini",
+      "type": "OS_ACTION",
+      "timestamp": "10:42 pm"
+    }
+  ]
+}
