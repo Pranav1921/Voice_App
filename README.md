@@ -1,14 +1,8 @@
 # Voice-to-Task-Mobile-Application
 
-An ultra-fast, intelligent, multimodal AI Voice Assistant mobile application built with **React Native (Expo SDK 54)** and powered by a hybrid cognitive engine combining **Groq Whisper Large v3 Turbo**, **Groq Llama 3.3 70B Versatile**, and **Google Gemini Multimodal Audio**.
-
-Designed with a pixel-perfect, minimalist glassmorphic interface featuring a **3D Iridescent Holographic Liquid Orb**, real-time dynamic date & clock context, **direct Google Calendar cloud sync**, and deep Android OS hardware/system controls.
-
----
+Intelligent, multimodal AI Voice Assistant mobile application built with **React Native (Expo SDK 54)** and powered by a hybrid cognitive engine combining **Groq Whisper Large v3 Turbo**, **Groq Llama 3.3 70B Versatile**, and **Google Gemini Multimodal Audio**.
 
 ## Download & Install
-
-> **Latest Release — v1.0.0** · Direct install, no Play Store needed!
 
 <div align="center">
 
@@ -76,12 +70,6 @@ Directly control phone hardware and access native Android settings via voice com
 - **Social Media**: Launch Instagram, Facebook, X (Twitter), LinkedIn, Snapchat, and Reddit.
 - **Travel & Food**: Deep-link to MakeMyTrip, Goibibo, Uber, Ola, Zomato, and Swiggy.
 - **Productivity**: Google Keep, Samsung Notes, Calculator, and Google Maps Navigation.
-
-### 7. Pixel-Perfect Glassmorphic UI
-- **3D Iridescent Liquid Glass Orb (MinimalOrb)**: Multi-layered rotating wave gradient, gentle breathing aura, and glossy specular glass reflections.
-- **Two Seamless Screen Modes**:
-  - **Voice View**: Minimalist interface with the 3D Orb, status badge, centered headline display, and 3-button floating bottom bar.
-  - **Chat View**: Centered hero greeting, horizontal Popular Idea cards slider, and floating input pill bar.
 
 ---
 
@@ -255,8 +243,3 @@ The app gracefully requests permissions on first use:
 - **Camera**: Hardware flashlight torch and viewfinder.
 - **Contacts**: Contact lookup for direct WhatsApp messaging and phone calls.
 - **Notifications**: Exact local alarm notifications.
-
----
-
-## License
-This project is open source and available under the [MIT License](LICENSE).
