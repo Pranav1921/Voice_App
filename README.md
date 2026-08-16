@@ -6,6 +6,24 @@ Designed with a pixel-perfect, minimalist glassmorphic interface featuring a **3
 
 ---
 
+## 📲 Download & Install (Android)
+
+> **Latest Release — v1.0.0** · Built with EAS Build · Direct APK install, no Play Store needed!
+
+| | |
+|---|---|
+| **📥 Download APK** | [👉 Click here to download](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) |
+| **📡 Backend API** | [https://voice-app-2pv0.onrender.com](https://voice-app-2pv0.onrender.com/api/health) |
+| **📱 Scan QR Code** | Open the download link on your phone or scan QR from the Expo build page |
+
+**Install steps:**
+1. Open the download link on your Android phone
+2. Tap **"Install"** to download the APK
+3. If prompted, allow **"Install from unknown sources"**
+4. Launch the app and tap the 🎙️ orb to start!
+
+---
+
 ## 🌟 Key Features
 
 ### ⚡ 1. Ultra-Low Latency Voice Engine (< 250ms)
@@ -202,12 +220,18 @@ When running locally, ensure your mobile device can reach your PC's backend serv
 
 ## ☁️ Cloud Deployment Guide
 
+### Live Deployments:
+| Service | URL | Status |
+|---|---|---|
+| **Backend API** | [https://voice-app-2pv0.onrender.com](https://voice-app-2pv0.onrender.com/api/health) | ✅ Live |
+| **Android APK** | [EAS Build v1.0.0](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) | ✅ Ready |
+
 ### Deploying the Backend (Free on Render):
 1. Sign up on [Render.com](https://render.com) and click **New Web Service**.
 2. Connect your GitHub repository `Pranav1921/Voice_App`.
 3. Set **Start Command**: `node server/server.js`.
 4. Add environment variables `GROQ_API_KEY`, `GEMINI_API_KEY`, and `PORT=5000`.
-5. Update `src/services/BackendApiService.js` with your live Render URL (`https://your-app.onrender.com`).
+5. Update `src/services/BackendApiService.js` with your live Render URL.
 
 ### Building a Standalone Android APK (EAS Build):
 ```bash
