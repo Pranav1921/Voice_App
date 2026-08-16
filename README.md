@@ -1,4 +1,4 @@
-# Voice Assistant & Task Automation App
+# Voice-to-Task-Mobile-Application
 
 An ultra-fast, intelligent, multimodal AI Voice Assistant mobile application built with **React Native (Expo SDK 54)** and powered by a hybrid cognitive engine combining **Groq Whisper Large v3 Turbo**, **Groq Llama 3.3 70B Versatile**, and **Google Gemini Multimodal Audio**.
 
