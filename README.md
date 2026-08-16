@@ -10,14 +10,21 @@ Designed with a pixel-perfect, minimalist glassmorphic interface featuring a **3
 
 > **Latest Release — v1.0.0** · Built with EAS Build · Direct APK install, no Play Store needed!
 
+<div align="center">
+
+[![Download APK QR Code](https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9)](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9)
+
+**📱 Scan with your Android phone to install**
+
+</div>
+
 | | |
 |---|---|
 | **📥 Download APK** | [👉 Click here to download](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) |
 | **📡 Backend API** | [https://voice-app-2pv0.onrender.com](https://voice-app-2pv0.onrender.com/api/health) |
-| **📱 Scan QR Code** | Open the download link on your phone or scan QR from the Expo build page |
 
 **Install steps:**
-1. Open the download link on your Android phone
+1. Scan the QR code or open the download link on your Android phone
 2. Tap **"Install"** to download the APK
 3. If prompted, allow **"Install from unknown sources"**
 4. Launch the app and tap the 🎙️ orb to start!
