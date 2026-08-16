@@ -6,28 +6,31 @@ Designed with a pixel-perfect, minimalist glassmorphic interface featuring a **3
 
 ---
 
-## 📲 Download & Install (Android)
+## 📲 Download & Install
 
-> **Latest Release — v1.0.0** · Built with EAS Build · Direct APK install, no Play Store needed!
+> **Latest Release — v1.0.0** · Direct install, no Play Store needed!
 
 <div align="center">
 
-[![Download APK QR Code](https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9)](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9)
-
-**📱 Scan with your Android phone to install**
+| 🤖 Android | 🍎 iOS |
+|:---:|:---:|
+| [![Android QR](https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9)](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) | [![iOS QR](https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://expo.dev/@pranavku2119/VoiceAssistant)](https://expo.dev/@pranavku2119/VoiceAssistant) |
+| **Direct APK Install** | **Open in Expo Go** |
+| [👉 Download APK](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) | [👉 Open Project](https://expo.dev/@pranavku2119/VoiceAssistant) |
 
 </div>
 
-| | |
-|---|---|
-| **📥 Download APK** | [👉 Click here to download](https://expo.dev/accounts/pranavku2119/projects/VoiceAssistant/builds/1566176d-205f-4fdf-9854-82095059e9b9) |
-| **📡 Backend API** | [https://voice-app-2pv0.onrender.com](https://voice-app-2pv0.onrender.com/api/health) |
+**📡 Live Backend:** [https://voice-app-2pv0.onrender.com](https://voice-app-2pv0.onrender.com/api/health)
 
-**Install steps:**
-1. Scan the QR code or open the download link on your Android phone
-2. Tap **"Install"** to download the APK
-3. If prompted, allow **"Install from unknown sources"**
-4. Launch the app and tap the 🎙️ orb to start!
+**Android install steps:**
+1. Scan QR or tap Download APK on your Android phone
+2. Tap **"Install"** → allow **"Unknown sources"** if prompted
+3. Launch app → tap the 🎙️ orb!
+
+**iOS install steps:**
+1. Install **Expo Go** from the App Store
+2. Scan the iOS QR code with your iPhone camera
+3. App opens directly in Expo Go!
 
 ---
 
