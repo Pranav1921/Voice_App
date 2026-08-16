@@ -67,14 +67,6 @@ Directly control phone hardware and access native Android settings via voice com
 - **Travel & Food**: Deep-link to MakeMyTrip, Goibibo, Uber, Ola, Zomato, and Swiggy.
 - **Productivity**: Google Keep, Samsung Notes, Calculator, and Google Maps Navigation.
 
-### 🎨 7. 1:1 Pixel-Perfect Glassmorphic UI
-- **3D Iridescent Liquid Glass Orb (`MinimalOrb`)**: Multi-layered rotating wave gradient, gentle breathing aura, and glossy specular glass reflections.
-- **Two Seamless Screen Modes**:
-  - **Voice View**: Minimalist interface with the 3D Orb, `✨ Your Assistant` status badge, centered headline display, and 3-button floating bottom bar (`💬` Chat View | `🎙️` Circular Mic Button | `✕` Reset).
-  - **Chat View**: Centered hero greeting, horizontal `Popular Idea` cards slider (`UX`, `Fi`, `⏰`, `💬`), and floating input pill bar (`+` | `Write here ...` | `✈`).
-
----
-
 ## 🗣️ Voice Commands & Cheat Sheet
 
 | Category | Voice Commands to Speak |
