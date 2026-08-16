@@ -1,7 +1,9 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
+
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
-const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -183,7 +185,7 @@ async function processWithAI(query) {
   }
 
   // 2. Gemini Flash Multi-Model Engine
-  const models = ['gemini-flash-latest', 'gemini-2.5-flash-lite', 'gemini-3.5-flash', 'gemini-2.5-flash'];
+  const models = ['gemini-2.0-flash', 'gemini-2.0-flash-lite', 'gemini-1.5-flash', 'gemini-2.5-flash'];
   let data = null;
   let activeModel = '';
 
@@ -261,11 +263,11 @@ Output JSON structure:
  */
 async function processAudioWithGemini(audioBase64, mimeType = 'audio/m4a') {
   const models = [
-    'gemini-3.6-flash',
-    'gemini-3.5-flash-lite',
-    'gemini-flash-lite-latest',
-    'gemini-3.5-flash',
-    'gemini-3.7-flash',
+    'gemini-2.0-flash',
+    'gemini-2.0-flash-lite',
+    'gemini-1.5-flash',
+    'gemini-1.5-flash-8b',
+    'gemini-2.5-flash',
   ];
   let data = null;
   let activeModel = '';

@@ -2,20 +2,8 @@ import { Platform } from 'react-native';
 import Constants from 'expo-constants';
 
 const getBackendUrl = () => {
-  if (Platform.OS === 'web') return 'http://localhost:5000';
-
-  try {
-    const hostUri = Constants.expoConfig?.hostUri || Constants.manifest?.debuggerHost;
-    if (hostUri) {
-      const ip = hostUri.split(':')[0];
-      if (ip && ip !== 'localhost' && ip !== '127.0.0.1') {
-        return `http://${ip}:5000`;
-      }
-    }
-  } catch (e) {}
-
-  // Fallback to PC Wi-Fi LAN IP
-  return 'http://192.168.31.51:5000';
+  // 🚀 Production backend on Render
+  return 'https://voice-app-2pv0.onrender.com';
 };
 
 const BACKEND_URL = getBackendUrl();
