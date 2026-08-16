@@ -43,8 +43,9 @@ const writeDB = (data) => {
   }
 };
 
-const getDynamicSystemPrompt = () => {
-  const now = new Date();
+const getDynamicSystemPrompt = (clientTime) => {
+  // Use client-provided time (phone local time) if available, else fallback to server UTC
+  const now = clientTime ? new Date(clientTime) : new Date();
   const dateStr = now.toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -105,13 +106,14 @@ Critical Rules:
 `;
 };
 
+
 let OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '';
 
 /**
  * Calls Groq Llama 3.3 70B, OpenRouter AI, or Gemini Flash to extract structured intent
  */
-async function processWithAI(query) {
-  const currentPrompt = getDynamicSystemPrompt();
+async function processWithAI(query, clientTime) {
+  const currentPrompt = getDynamicSystemPrompt(clientTime);
 
   // 1. Try Groq Llama 3.3 70B (30ms ultra-fast intent engine)
   if (GROQ_API_KEY) {
@@ -395,7 +397,7 @@ async function transcribeWithGroqWhisper(audioBase64, mimeType = 'audio/m4a') {
  * Multimodal Audio Voice Processing Endpoint
  */
 app.post('/api/process-voice-audio', async (req, res) => {
-  const { audioBase64, mimeType } = req.body;
+  const { audioBase64, mimeType, clientTime } = req.body;
   const startTime = Date.now();
 
   console.log('\n===============================================================');
@@ -414,7 +416,7 @@ app.post('/api/process-voice-audio', async (req, res) => {
     // 1. Try Groq Whisper STT first (Lightning Fast 0.15s Speech Recognition)
     const whisperText = await transcribeWithGroqWhisper(audioBase64, mimeType);
     if (whisperText) {
-      const aiResult = await processWithAI(whisperText);
+      const aiResult = await processWithAI(whisperText, clientTime);
       if (aiResult) {
         parsed = aiResult;
         parsed.transcribedText = whisperText;
@@ -488,7 +490,7 @@ app.post('/api/process-voice-audio', async (req, res) => {
  * Main Voice Processing Endpoint
  */
 app.post('/api/process-voice', async (req, res) => {
-  const { query } = req.body;
+  const { query, clientTime } = req.body;
   const startTime = Date.now();
 
   console.log('\n===============================================================');
@@ -501,7 +503,7 @@ app.post('/api/process-voice', async (req, res) => {
   }
 
   try {
-    const { parsed, model } = await processWithAI(query.trim());
+    const { parsed, model } = await processWithAI(query.trim(), clientTime);
     const elapsed = Date.now() - startTime;
 
     console.log(`⚡ [AI ENGINE]: ${model} (${elapsed}ms)`);

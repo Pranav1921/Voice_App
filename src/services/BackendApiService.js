@@ -19,7 +19,7 @@ export const processVoiceAudioWithBackend = async (audioBase64, mimeType = 'audi
     const response = await fetch(`${BACKEND_URL}/api/process-voice-audio`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ audioBase64, mimeType }),
+      body: JSON.stringify({ audioBase64, mimeType, clientTime: new Date().toISOString() }),
     });
 
     if (response.ok) {
@@ -42,7 +42,7 @@ export const processVoiceWithBackend = async (query) => {
     const response = await fetch(`${BACKEND_URL}/api/process-voice`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: query.trim() }),
+      body: JSON.stringify({ query: query.trim(), clientTime: new Date().toISOString() }),
     });
 
     if (response.ok) {
